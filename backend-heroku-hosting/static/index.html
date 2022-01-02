@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmit Aryan Backend Docs</title>
+</head>
+<body>
+<style>
+    .header {
+        text-align: center;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #heading {
+        text-decoration: underline 2px red;
+    }
+
+    #nav-header {
+        background-color: rgb(189, 189, 189);
+        color: rgb(0, 0, 0);
+    }
+
+    #nav-table-title {
+        padding: 3px;
+        margin: 6px;
+
+    }
+
+    #info {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+    }
+
+    #title {
+
+        text-decoration: underline 2px rgb(0, 0, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .endpoints {
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .main-body {
+        padding: 5px;
+        background-color: rgba(255, 174, 0, 0.719);
+    }
+
+    #put-endpoints-title {
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        text-decoration: underline 2px black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #put-endpoint-url {
+        font-weight: bold;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    #post-endpoints-title {
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        text-decoration: underline 2px black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #post-endpoints-url {
+        font-weight: bold;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    #delete-endpoints-title {
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        text-decoration: underline 2px black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #delete-endpoints-url {
+        font-weight: bold;
+        margin: 5px;
+        padding: 2px;
+    }
+</style>
+<div class="nav">
+    <nav id="nav-header">
+        <table id="nav-table-title">
+            <tr>
+                <td width="65%">
+                    <h3>
+                        Ashmit Aryan
+                    </h3>
+                </td>
+                <td align="center" width="10%">
+                    <h3>
+                        <a href="https://ashmitaryan.me/">Go to Main Website</a>
+                    </h3>
+                </td>
+                <td align="center" width="10%">
+                    <h3>
+                        <a href="https://dashboard-ashmit-aryan.live">Go to Dashboard</a>
+                    </h3>
+                </td>
+            </tr>
+        </table>
+    </nav>
+</div>
+<div class="main-body">
+    <div class="header">
+        <h1 id="heading">Ashmit Aryan Backend Docs</h1>
+        <p id="info">This is all The Information of Ashmit Aryan Backend, All Of the <b><u>POST</u></b> , <b><u>PUT</u></b>
+            , <b><u>DELETE</u></b> Methods are Authenticated, <br> If Want Information About Authentication Please
+            Contact <br> <a href="mailto:ashmitaryan@ashmitaryan.me">Ashmit Aryan</a></p>
+    </div>
+    <hr noshade size="5">
+    <div class="get endpoints">
+        <h2 id="title">All GET Endpoints</h2>
+
+        <table id="get-endpoints-link-table">
+            <td>
+                <tr>
+                    <p>All Apps:- <a href="/api/apps/">/api/apps/</a></p>
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    <p>All Tech Explain:- <a href="/api/tech-explain/">/api/tech-explain/</a></p>
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    <p>All Images:- <a href="/api/image-upload/">/api/image-upload/</a></p>
+                </tr>
+            </td>
+
+        </table>
+    </div>
+    <div class="post endpoints">
+        <h2 id="title">All POST Endpoints</h2>
+        <table id="post-endpoints-link-table">
+            <td>
+                <tr>
+                    <div id="post-endpoints-title">Apps</div>
+                    <div id="post-endpoints-url">Endpoint Url:- /api/apps/</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="black"
+                           cellspacing="10" cellpadding="10">
+                        <tr>
+                            <th>
+                                Json Body Model Name
+                            </th>
+                            <th>
+                                Data Type
+                            </th>
+                            <th>
+                                Max Input
+                            </th>
+                            <th>
+                                Min Input
+                            </th>
+                            <th>
+                                Required
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                name
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Apps Name !! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                price
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Apps Price!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                logo
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                -
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Apps Logo!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                description
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                5,12,00,000
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Apps Description!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                platforms
+                            </th>
+                            <th>
+                                Array Of Objects
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Apps Platform Information. <br>
+                                This Array Of Object is Written as <br>
+                                {
+                                name: "",
+                                icon: "",
+                                link: ""
+                                }
+                                <br> All in String.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                tech_stack
+                            </th>
+                            <th>
+                                Array Of Object
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                The Tech Stack On Which App is Made.
+                                This Array Of Object is Written as <br>
+                                {
+                                name: "",
+                                icon: "",
+                                link: ""
+                                }
+                                <br> All in String.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                code
+                                <ul>
+                                    <li>name</li>
+                                    <li>icon</li>
+                                    <li>link</li>
+                                </ul>
+                            </th>
+                            <th>
+                                Object
+                                <ul>
+                                    <li>String</li>
+                                    <li>String</li>
+                                    <li>String(url)</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>225</li>
+                                    <li>225</li>
+                                    <li>-</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>6</li>
+                                    <li>6</li>
+                                    <li>6</li>
+                                </ul>
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                The Code Base Of The App,The Object needs to Have all of the Elemet Stated Above.
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <P>*Use Only application/json content</P>
+            <td>
+                <tr>
+                    <div id="post-endpoints-title">Tech Explain</div>
+                    <div id="post-endpoints-url">Endpoint Url:- /api/tech-explain/</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="black"
+                           cellspacing="10" cellpadding="10">
+                        <tr>
+                            <th>
+                                Json Body Model Name
+                            </th>
+                            <th>
+                                Data Type
+                            </th>
+                            <th>
+                                Max Input
+                            </th>
+                            <th>
+                                Min Input
+                            </th>
+                            <th>
+                                Required
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                title
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Title Of The Blog!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                img_url
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                -
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                A Image url For the Blog!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                description
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                5,12,00,000
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Blog Original Content!! Simple
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                pros
+                            </th>
+                            <th>
+                                Array of Strings
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                A Array of String that Describe the Pros of The Blog Topic!!
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                cons
+                            </th>
+                            <th>
+                                Array Of Strings
+                            </th>
+                            <th>
+                                225
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                A Array of String that Describe the Cons of The Blog Topic!!
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                video_link
+                            </th>
+                            <th>
+                                String
+                            </th>
+                            <th>
+                                -
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                A Video Explaining The Content of the Blog.
+                            </th>
+                        </tr>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <P>*Use Only application/json content</P>
+            <td>
+                <tr>
+                    <div id="post-endpoints-title">Image Upload</div>
+                    <div id="post-endpoints-url">Endpoint Url:- /api/image-upload/</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="black"
+                           cellspacing="10" cellpadding="10">
+                        <tr>
+                            <th>
+                                Form Data Feild Name
+                            </th>
+                            <th>
+                                Data Type
+                            </th>
+                            <th>
+                                Max Input
+                            </th>
+                            <th>
+                                Min Input
+                            </th>
+                            <th>
+                                Required
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                file
+                            </th>
+                            <th>
+                                File (.png .jpg .jpeg)
+                            </th>
+                            <th>
+                                1
+                            </th>
+                            <th>
+                                1
+                            </th>
+                            <th>
+                                True
+                            </th>
+                            <th>
+                                Photo For The Lander Page!! Simple
+                            </th>
+                        </tr>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <P>*Use Only form/raw content</P>
+        </table>
+    </div>
+    <div class="put endpoints">
+        <h2 id="title">All PUT Endpoints</h2>
+        <table id="put-endpoints-link-table">
+            <td>
+                <tr>
+                    <div id="put-endpoints-title">Apps</div>
+                    <div id="put-endpoint-url">Endpoint Url:- /api/apps/update</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Path Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                The Params is Used For Specifing The App Which Needs To Updated By Using It's Id
+                            </th>
+                            <th>
+                                <a href="/api/apps/update/6150bf04f2856b2d251c727e">/api/apps/update/6150bf04f2856b2d251c727e</a>
+                            </th>
+                        </tr>
+                    </table>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Query Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                q
+                            </th>
+                            <th>
+                                The Query Params is Used For Specifing The Part of The App Which Needs To Updated.
+                                <br>
+                                <a href="/query">Click Here to See All Query</a>
+                            </th>
+                            <th>
+                                <a href="/api/apps/update/6150bf04f2856b2d251c727e/?q=price">/api/apps/update/6150bf04f2856b2d251c727e/?q=price</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                m
+                            </th>
+                            <th>
+                                The Query Params is Used For Specifing The Method of The Updation.
+                                <br>
+                                <a href="/query">Click Here to See All Query</a>
+                            </th>
+                            <th>
+                                <a href="/api/apps/update/6150bf04f2856b2d251c727e/?q=price">/api/apps/update/6150bf04f2856b2d251c727e/?q=price&m=i</a>
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <P>*Use Only application/json content</P>
+            <td>
+                <tr>
+                    <div id="put-endpoints-title">Tech Explain</div>
+                    <div id="put-endpoint-url">Endpoint Url:- /api/tech-explain/update</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Path Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                The Params is Used For Specifing The Blog Which Needs To Updated By Using It's Id
+                            </th>
+                            <th>
+                                <a href="/api/apps/update/6150bf04f2856b2d251c727e">/api/tech-explain/update/6150bf04f2856b2d251c727e</a>
+                            </th>
+                        </tr>
+                    </table>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Query Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                q
+                            </th>
+                            <th>
+                                The Query Params is Used For Specifing The Part of The Blog Which Needs To Updated.
+                            </th>
+                            <th>
+                                <a href="/api/tech-explain/update/6150bf04f2856b2d251c727e/?q=cons">/api/tech-explainupdate/6150bf04f2856b2d251c727e/?q=cons</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                m
+                            </th>
+                            <th>
+                                The Query Params is Used For Specifing The Method of The Updation.
+                            </th>
+                            <th>
+                                <a href="/api/tech-explain/update/6150bf04f2856b2d251c727e/?q=price">/api/tech-explain/update/6150bf04f2856b2d251c727e/?q=price&m=i</a>
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <P>*Use Only application/json content</P>
+        </table>
+    </div>
+    <div class="delete endpoints">
+        <h2 id="title">All Delete Endpoints</h2>
+        <table id="delete-endpoints-link-table">
+            <td>
+                <tr>
+                    <div id="delete-endpoints-title">Apps</div>
+                    <div id="delete-endpoints-url">Endpoint Url:- /api/apps/delete</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Path Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                The Params is Used For Specifing The App Which Needs To Be Deleted By Using It's Id
+                            </th>
+                            <th>
+                                <a href="/api/apps/delete/6150bf04f2856b2d251c727e">/api/apps/delete/6150bf04f2856b2d251c727e</a>
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    <div id="delete-endpoints-title">Tech Explain</div>
+                    <div id="delete-endpoints-url">Endpoint Url:- /api/tech-explain/delete</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Path Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                The Params is Used For Specifing The Blog Which Needs To Be Deleted By Using It's Id
+                            </th>
+                            <th>
+                                <a href="/api/tech-explain/delete/6150bf04f2856b2d251c727e">/api/tech-explain/delete/6150bf04f2856b2d251c727e</a>
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    <div id="delete-endpoints-title">Image Upload</div>
+                    <div id="delete-endpoints-url">Endpoint Url:- /api/image-upload/delete</div>
+                    <table style="margin: 10px;" bgcolor="white" align="center" border="1" bordercolor="green"
+                           cellspacing="10" cellpadding="5">
+                        <tr>
+                            <th>Path Parameter</th>
+                            <th>Description</th>
+                            <th>Eg.</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                The Params is Used For Specifing The Image Which Needs To Be Deleted By Using It's Id
+                            </th>
+                            <th>
+                                <a href="/api/image-upload/delete/6150bf04f2856b2d251c727e">/api/image-upload/delete/6150bf04f2856b2d251c727e</a>
+                            </th>
+                        </tr>
+                    </table>
+                </tr>
+            </td>
+        </table>
+    </div>
+</div>
+</body>
+</html>
