@@ -41,7 +41,7 @@ router.post('/login', async(req,res)=> {
 
     // Find if Email Exist
     const userExist = await User.findOne({email: req.body.email});
-    if(!userExist) {return res.status(503).send({message: "User Dont Exist, Please Login"});}
+    if(!userExist) {return res.status(503).send({message: "User Dont Exist, Please Sign Up"});}
     
 
     //Validate Password

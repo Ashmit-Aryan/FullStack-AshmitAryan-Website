@@ -3,7 +3,7 @@ const state= {
         {
           name: "Email",
           value: "Ashmit Aryan",
-          link: "mailto:developerwowtechnow@gmail.com",
+          link: "mailto:ashmitaryan@ashmitaryan.me",
           icon: "email"
         },
         {
@@ -27,8 +27,15 @@ const state= {
         {
             name:'WhatsApp',
             value:'Ashmit Aryan',
-            link:'https://wa.me/919755275063?text=Hii+There+%21+%2C+I+Want+a+Help+From+You',
+            link:'https://wa.me/917549378874?text=Hii+There+%21+%2C+I+Want+a+Help+From+You',
             icon:'whatsapp'
+
+        },
+        {
+            name:'Twitter',
+            value:'Ashmit Aryan',
+            link:'https://twitter.com/_Ashmit_Aryan_',
+            icon:'twitter'
 
         }
     ]

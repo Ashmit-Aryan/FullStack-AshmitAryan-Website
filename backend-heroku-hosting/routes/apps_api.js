@@ -149,7 +149,7 @@ router.put('/update/:id',verify ,async (req, res) => {
             switch (method) {
                 case "p":
                     try {
-                        const pfName = req.body.tsname;
+                        const tsName = req.body.tsname;
                         const updatedApp = await Apps.updateOne({_id: mongoose.mongo.ObjectID(id) , name:tsName},{$set:{"tech_stack.$": req.body.tech_stack}});
                         res.status(205).send({message: `Updated ${updatedApp.nModified} Documents ${updateQuery}`});
                     } catch (e) {
